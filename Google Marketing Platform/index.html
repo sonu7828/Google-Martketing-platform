@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Marketing Platform</title>
+
+    <!-- ✅ Bootstrap 5.3.2 CSS (only one version) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ✅ Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Make images responsive */
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Fix navbar toggle icon visibility */
+      .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0,0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+
+      /* Ensure hero section doesn’t overflow in mobile */
+      section {
+        background-size: cover;
+        background-position: center;
+      }
+
+      /* Padding adjustments for small screens */
+      @media (max-width: 576px) {
+        h1.display-3 {
+          font-size: 2rem;
+        }
+        p.lead {
+          font-size: 1rem;
+        }
+      }
+
+      footer {
+        font-size: 15px;
+      }
+
+      .footer-top {
+        padding: 30px 0 30px 0;
+        border-bottom: 1px solid #dee2e6;
+      }
+
+      .footer-cols {
+        padding: 40px 0;
+      }
+
+      .footer-cols h6 {
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
+
+      .footer-cols ul li {
+        margin-bottom: 8px;
+      }
+
+      .footer-bottom {
+        padding: 25px 0 20px;
+        border-top: 1px solid #dee2e6;
+        font-size: 14px;
+      }
+
+      .footer-link a {
+        color: #6c757d;
+        text-decoration: none;
+      }
+
+      .footer-link a:hover {
+        text-decoration: underline;
+      }
+
+      .footer-logo {
+        font-weight: 600;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ✅ Fully Working Responsive Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-semibold d-flex align-items-center" href="#">
+          <img
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_74x24dp.png"
+            alt="Logo"
+            height="25"
+            class="me-2"
+          />
+          Marketing Platform
+        </a>
+
+        <!-- ✅ Toggler Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- ✅ Navbar Links -->
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="mainNavbar"
+        >
+          <ul class="navbar-nav ms-lg-5 mb-2 mb-lg-0 text-center text-lg-start">
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#"
+                >For Small Businesses</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">For Enterprises</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Blog</a>
+            </li>
+          </ul>
+
+          <div class="text-center text-lg-end mt-3 mt-lg-0">
+            <a href="#" class="text-primary text-decoration-none me-3 fw-medium"
+              >Partners</a
+            >
+            <a href="#" class="text-primary text-decoration-none fw-medium"
+              >Support</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ✅ Rest of your page (unchanged) -->
+    <!-- Hero Section -->
+    <section
+      class="text-center text-white position-relative"
+      style="
+        background-image: url('image1.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+      "
+    >
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100"
+        style="background: rgba(0, 0, 0, 0.3)"
+      ></div>
+
+      <div
+        class="container position-relative d-flex flex-column justify-content-center align-items-center h-100"
+      >
+        <h1 class="display-3 fw-bold">Faster, smarter marketing</h1>
+        <p class="lead mt-3">
+          Introducing Google Marketing Platform, a unified advertising and
+          analytics platform for smarter marketing and better results.
+        </p>
+        <a href="#" class="btn btn-primary btn-lg mt-4 rounded-pill"
+          >Sign in to Google Marketing Platform →</a
+        >
+      </div>
+    </section>
+
+    <!-- ✅ (Rest of your sections below untouched — everything same) -->
+    <!-- ... (all the same content from your original file) ... -->
+    <!-- Small Business Section -->
+    <div class="container my-5">
+      <div class="row align-items-center">
+        <!-- Left Text -->
+        <div class="col-md-6">
+          <h1 class="fw-bold mb-3">Easy-to-use tools for small businesses</h1>
+          <p class="text-muted">
+            Get free tools to make the most of your marketing, from site and app
+            analytics to intuitive testing and more.
+          </p>
+          <a href="#" class="text-primary fw-semibold"
+            >See small-business solutions</a
+          >
+        </div>
+
+        <!-- Right Image -->
+        <div class="col-md-6 text-center">
+          <img
+            src="image2.jpg"
+            alt="Analytics Dashboard"
+            class="img-fluid rounded shadow-sm"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Small Business Section -->
+    <div class="container my-5">
+      <div class="row align-items-center">
+        <!-- Right Image -->
+        <div class="col-md-6 text-center">
+          <img
+            src="image3.jpg"
+            alt="Analytics Dashboard"
+            class="img-fluid rounded shadow-sm"
+          />
+        </div>
+        <!-- Left Text -->
+        <div class="col-md-6">
+          <h1 class="fw-bold mb-3">Easy-to-use tools for small businesses</h1>
+          <p class="text-muted">
+            Get free tools to make the most of your marketing, from site and app
+            analytics to intuitive testing and more.
+          </p>
+          <a href="#" class="text-primary fw-semibold"
+            >See small-business solutions</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Simple Quote Section -->
+    <div class="text-center p-4">
+      <!-- Green Circle with Quote -->
+      <div
+        class="bg-success rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+        style="width: 60px; height: 60px"
+      >
+        <span class="text-white fs-1">“</span>
+      </div>
+
+      <!-- Quote Text -->
+      <p class="fs-4" style="color: #3c4043">
+        Our Adidas teams
+        <mark class="bg-success text-white">work together in one</mark>
+        <mark class="bg-success text-white">environment</mark><br />
+        where we can see audience insights,<br />
+        what creative we’re running and where,<br />
+        how it’s performing, and make changes<br />
+        almost in real time.
+      </p>
+
+      <!-- Author -->
+      <p><strong>Chris Murphy</strong>, Head of Digital Experience, Adidas</p>
+    </div>
+    <!-- Add this inside your <body> -->
+    <div class="container text-center my-5">
+      <h2 class="display-5 fw-semibold">
+        Integrated solutions for every marketer.
+      </h2>
+
+      <div class="card mt-5 p-4 shadow-sm border-0">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-md-start text-center mb-4 mb-md-0">
+            <h5 class="mb-3">Analytics</h5>
+            <p class="mb-3 fs-5">
+              Understand your customers so you can deliver better experiences.
+            </p>
+            <a href="#" class="text-primary fw-semibold"
+              >Learn more about Analytics</a
+            >
+          </div>
+          <div class="col-md-6 text-center">
+            <img
+              src="image5.jpg"
+              alt="Analytics Screenshot"
+              class="img-fluid"
+              style="max-height: 250px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container py-5">
+      <!-- Top Row: 3 Cards -->
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="border rounded p-4 h-100">
+            <br />
+            <h5 class="fw-semibold">Tag Manager</h5>
+            <p class="text-muted mb-2">
+              Manage all your tags without editing code.
+            </p>
+            <div><span class="text-primary fs-5">→</span></div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="border rounded p-4 h-100">
+            <br />
+            <h5 class="fw-semibold">Campaign Manager 360</h5>
+            <p class="text-muted mb-2">
+              Get a complete view of all your digital media campaigns.
+            </p>
+            <div><span class="text-primary fs-5">→</span></div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="border rounded p-4 h-100">
+            <br />
+            <h5 class="fw-semibold">Display & Video 360</h5>
+            <p class="text-muted mb-2">
+              Reach today’s always-connected audiences wherever they are.
+            </p>
+            <div><span class="text-primary fs-5">→</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Row: 1 Card -->
+      <div class="row g-4 mt-2">
+        <div class="col-md-4">
+          <div class="border rounded p-4 h-100">
+            <br />
+            <h5 class="fw-semibold">Search Ads 360</h5>
+            <p class="text-muted mb-2">
+              Get real-time data and unified insights for your search campaigns.
+            </p>
+            <div><span class="text-primary fs-5">→</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <!-- Left Text Section -->
+        <div class="col-md-6">
+          <h1 class="fw-bold display-5">
+            Bain report: How top brands grow with timely customer connections.
+          </h1>
+          <p class="text-muted mt-3">
+            New research from Bain shows how leading marketers are using
+            platform integrations and technology to boost customer engagement by
+            delivering more relevant experiences in the moment.
+          </p>
+          <a href="#" class="text-primary fw-semibold text-decoration-none"
+            >Read more</a
+          >
+        </div>
+
+        <!-- Right Image Section -->
+        <div class="col-md-6 text-center mt-4 mt-md-0">
+          <img
+            src="image6.jpg"
+            alt="Bain report"
+            class="img-fluid"
+            style="max-width: 400px"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5 text-center">
+      <h1 class="fw-bold display-5">Stay in the know.</h1>
+      <p class="text-muted mb-5">
+        Explore articles, white papers, and other resources to help inform your
+        marketing and analytics decisions.
+      </p>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="image7.jpg" class="card-img-top" alt="Case Study" />
+            <div class="card-body text-start">
+              <small class="text-uppercase text-muted fw-semibold"
+                >Case Study</small
+              >
+              <p class="mt-2 fw-semibold">
+                Deckers Brands drives business growth with Google Marketing
+                Platform and Google Cloud
+              </p>
+              <a href="#" class="text-primary text-decoration-none fw-semibold"
+                >Read more</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="image8.png" class="card-img-top" alt="Feature Brief" />
+            <div class="card-body text-start">
+              <small class="text-uppercase text-muted fw-semibold"
+                >Feature Brief</small
+              >
+              <p class="mt-2 fw-semibold">
+                Control how data is used in Google Analytics
+              </p>
+              <a href="#" class="text-primary text-decoration-none fw-semibold"
+                >Read more</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="image9.jpg" class="card-img-top" alt="Guide" />
+            <div class="card-body text-start">
+              <small class="text-uppercase text-muted fw-semibold">Guide</small>
+              <p class="mt-2 fw-semibold">
+                Meeting the data challenge with Google Marketing Platform and
+                Google Cloud
+              </p>
+              <a href="#" class="text-primary text-decoration-none fw-semibold"
+                >Read more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <a
+          href="#"
+          class="fw-semibold text-decoration-none"
+          style="color: purple"
+          >See all resources</a
+        >
+      </div>
+    </div>
+
+    <!-- Partner Section -->
+    <div class="position-relative">
+      <!-- Background Image -->
+      <img
+        src="image10.jpg"
+        class="img-fluid w-100"
+        alt="Partner background"
+        style="height: 420px; object-fit: cover"
+      />
+
+      <!-- White Box overlapping bottom -->
+      <div
+        class="container position-absolute start-50 translate-middle-x"
+        style="bottom: -70px"
+      >
+        <div class="bg-white shadow-sm p-5 rounded-3">
+          <div class="row text-start">
+            <!-- Left -->
+            <div class="col-md-6 mb-4 mb-md-0">
+              <h1 class="fw-bold display-5">Let’s partner up.</h1>
+              <p class="text-muted">
+                Whether you’re looking for help with a single project or a
+                bigger, long-term partnership, Google Marketing Platform
+                Partners have the resources and expertise you need to help you
+                achieve more with your marketing.
+              </p>
+              <a href="#" class="text-primary fw-semibold text-decoration-none"
+                >Find a partner</a
+              >
+            </div>
+
+            <!-- Right -->
+            <div class="col-md-6">
+              <h1 class="fw-bold display-5">Help when you need it.</h1>
+              <p class="text-muted">
+                We’re here to support you every step of the way, whether you use
+                a single product or the entire Google Marketing Platform.
+              </p>
+              <a href="#" class="text-primary fw-semibold text-decoration-none"
+                >Get support</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Extra spacing below (to fix overlap gap) -->
+    <div style="height: 200px"></div>
+
+    <!-- 🔻 Footer HTML -->
+    <footer class="bg-light mt-5">
+      <div class="container">
+        <div class="footer-top d-flex align-items-center">
+          <span class="fw-semibold me-3">Follow us</span>
+          <a href="#" class="me-3 text-dark fs-5"
+            ><i class="bi bi-blogger"></i
+          ></a>
+          <a href="#" class="me-3 text-dark fs-5"
+            ><i class="bi bi-twitter"></i
+          ></a>
+          <a href="#" class="me-3 text-dark fs-5"
+            ><i class="bi bi-youtube"></i
+          ></a>
+          <a href="#" class="text-dark fs-5"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 footer-cols text-start"
+        >
+          <div>
+            <h6>About Google Marketing Platform</h6>
+            <ul class="list-unstyled footer-link">
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">For Small Businesses</a></li>
+              <li><a href="#">For Enterprise</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6>Learning & support</h6>
+            <ul class="list-unstyled footer-link">
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Analytics Academy</a></li>
+              <li><a href="#">Skillshop</a></li>
+              <li><a href="#">Google Primer</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6>Developers & partners</h6>
+            <ul class="list-unstyled footer-link">
+              <li><a href="#">Google Marketing Platform Partners</a></li>
+              <li><a href="#">Analytics for developers</a></li>
+              <li><a href="#">Tag Manager for developers</a></li>
+              <li><a href="#">Campaign Manager 360 for developers</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6>Related products</h6>
+            <ul class="list-unstyled footer-link">
+              <li><a href="#">Google Ads</a></li>
+              <li><a href="#">Google AdSense</a></li>
+              <li><a href="#">Google Ad Manager</a></li>
+              <li><a href="#">Google Cloud</a></li>
+              <li><a href="#">Firebase</a></li>
+            </ul>
+          </div>
+          <div>
+            <h6>More from Google</h6>
+            <ul class="list-unstyled footer-link">
+              <li><a href="#">Think with Google</a></li>
+              <li><a href="#">Business Solutions</a></li>
+              <li><a href="#">Google Workspace</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 🔹 Bottom Footer -->
+        <div
+          class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center"
+        >
+          <div
+            class="d-flex flex-wrap align-items-center mb-2 mb-md-0 footer-link"
+          >
+            <span class="footer-logo me-3">Google</span>
+            <a href="#" class="me-3">Privacy</a>
+            <a href="#" class="me-3">Terms</a>
+            <a href="#" class="me-3">About Google</a>
+            <a href="#">Google Products</a>
+          </div>
+          <div class="d-flex align-items-center">
+            <a href="#" class="me-3 text-muted text-decoration-none"
+              ><i class="bi bi-question-circle"></i> Help</a
+            >
+            <div class="dropdown">
+              <button
+                class="btn btn-sm btn-outline-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+              >
+                English (US)
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English (US)</a></li>
+                <li><a class="dropdown-item" href="#">Hindi</a></li>
+                <li><a class="dropdown-item" href="#">Spanish</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ✅ Bootstrap Bundle JS (only one, at bottom) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
